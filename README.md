@@ -1,16 +1,11 @@
-# IF.Japanese
-
-This repository presents frontend application for my Japanese APP
+# IF.Shop.ReactJs
 
 - [Development](#development)
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Running](#running)
-  - [Build](#build)
-  - [Updating packages](#updating-packages)
   - [Test & linters](#test--linters)
   - [Versioning](#versioning)
-- [Environments](#environments)
 - [Browsers](#browsers-support)
 - [Tests](#tests)
 - [Links](#links)
@@ -26,9 +21,9 @@ This repository presents frontend application for my Japanese APP
 
 ### Installation
 
-1. Clone project from GitHub repository `git clone git@github.com:furdzik/if.japanese.git` or `git clone https://github.com/furdzik/if.japanese.git`
-2. Add alias to your `hosts` file: `127.0.0.1         if.japanese.local`
-3. `cd if.japanese`
+1. Clone project from GitHub repository
+2. Add alias to your `hosts` file: `127.0.0.1         if.shop.local`
+3. `cd if.shop`
 5. Install dependencies `npm install`
 
 ### Running
@@ -39,31 +34,7 @@ Run
 npm start
 ```
 
-for starting dev server. Navigate to `http://if.japanese.local:2017/`. The app will automatically reload if you change any of the source files.
-
-### Build
-
-Run
-
-```sh
-npm run build
-```
-
-to build project.
-
-\* The build artifacts will be stored in the `dist/` directory.
-
-To run project locally run
-
-```sh
-cd dist
-```
-
-then
-
-```
-npm run serve
-```
+for starting dev server. Navigate to `http://if.shop.local:2111/`. The app will automatically reload if you change any of the source files.
 
 ### Updating packages
 
@@ -97,14 +68,6 @@ to execute the unit tests via Jest
 
 \* unit tests and linters are run on every `git push` (add `--no-validate` flag to omit it)
 
-Run
-
-```sh
-npm run test:update
-```
-
-to update [snapshots](https://jestjs.io/docs/en/snapshot-testing)
-
 ## Versioning
 
 This project uses auto-generated changelog. It should be generated per release. If you want to create new release make it via runnig:
@@ -118,13 +81,6 @@ Don't forget to upload git tag via runnig:
 or  
 
 `git push origin --tags` (to push all new tags)  
-
-## Environments
-
-| Environment | Url                                                                      |
-|-------------|--------------------------------------------------------------------------|
-| Local       | [http://if.japanese.local:2017](http://if.japanese.local:2017) |
-
 
 ## Browsers support
 
