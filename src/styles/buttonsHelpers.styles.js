@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 
 const Button = css`
   display: inline-flex;
@@ -12,26 +12,24 @@ const Button = css`
   border-radius: .2rem;
   transition: all 0.3s;
   cursor: pointer;
-  ${(props) => props.buttonPrimary && css`
-    background-color: ${props.theme.colors.primaryColor};
-    color: ${props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.primaryColor};
+  color: ${(props) => props.theme.colors.white};
+  &:focus,
+  &:hover {
+    background-color: ${(props) => props.theme.colors.tertiaryColor};
+  }
+  &:active {
+    background-color: ${(props) => props.theme.colors.tertiaryColor};
+  }
+
+  ${(props) => props.secondary && css`
+    background-color: ${props.theme.colors.quaternaryColor};
     &:focus,
     &:hover {
-      background-color: ${props.theme.colors.tertiaryColor};
+      background-color: ${props.theme.colors.quinaryColor};
     }
     &:active {
-      background-color: ${props.theme.colors.tertiaryColor};
-    }
-  `}
-  ${(props) => props.buttonSecondary && css`
-    background-color: ${props.theme.colors.secondaryColor};
-    color: ${props.theme.colors.black};
-    &:focus,
-    &:hover {
-      background-color: ${props.theme.colors.secondaryColorHover};
-    }
-    &:active {
-      background-color: ${props.theme.colors.secondaryColorHover};
+      background-color: ${props.theme.colors.quinaryColor};
     }
   `}
 `;

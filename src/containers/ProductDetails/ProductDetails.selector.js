@@ -1,10 +1,10 @@
 import { createSelector } from 'reselect';
 
-const productDetailsSelector = (store) => store.Layout;
+const productDetailsSelector = (store) => store.ProductDetails;
 
 export default createSelector(
   productDetailsSelector,
-  (layout) => ({
-    ...layout
+  (productDetails) => ({
+    ...productDetails
   })
 );

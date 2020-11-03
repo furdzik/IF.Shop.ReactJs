@@ -6,8 +6,7 @@ import { AnchorWrapper, AnchorText } from './Anchor.styles';
 const Anchor = (props) => (
   <AnchorWrapper
     to={props.to}
-    buttonPrimary={!props.secondary}
-    buttonSecondary={props.secondary}
+    secondary={props.secondary ? 1 : 0}
   >
     <AnchorText>
       {props.children}

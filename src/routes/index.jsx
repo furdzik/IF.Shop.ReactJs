@@ -23,6 +23,7 @@ const Routes = () => (
           <PageTitle>{MENU_NAMES.HOME_PAGE}</PageTitle>
         </Layout>
       </Route>
+
       <Route
         path={MENU_PATHS.PRODUCTS}
         exact
@@ -32,14 +33,26 @@ const Routes = () => (
           <ProductList />
         </Layout>
       </Route>
+
       <Route
-        path={`${MENU_PATHS.PRODUCTS}/:id`}
         exact
-      >
-        <Layout menuActiveItem={MENU_ID.PRODUCTS}>
-          <ProductDetails />
-        </Layout>
-      </Route>
+        path={`${MENU_PATHS.PRODUCTS}/:id`}
+        render={(props) => {
+          // eslint-disable-next-line react/prop-types
+          const { id } = props.match.params;
+
+          if (id) {
+            return (
+              <Layout menuActiveItem={MENU_ID.PRODUCTS}>
+                <ProductDetails id={id} />
+              </Layout>
+            );
+          }
+
+          return null;
+        }}
+      />
+
       <Route
         path={MENU_PATHS.INSPIRATIONS}
         exact
@@ -48,6 +61,7 @@ const Routes = () => (
           <PageTitle>{MENU_NAMES.INSPIRATIONS}</PageTitle>
         </Layout>
       </Route>
+
       <Route
         path={MENU_PATHS.ABOUT}
         exact
@@ -56,6 +70,7 @@ const Routes = () => (
           <PageTitle>{MENU_NAMES.ABOUT}</PageTitle>
         </Layout>
       </Route>
+
       <Route
         path={MENU_PATHS.BASKET}
         exact
@@ -64,6 +79,7 @@ const Routes = () => (
           <PageTitle>{MENU_NAMES.BASKET}</PageTitle>
         </Layout>
       </Route>
+
       <Route
         render={() => <h1>Page not found</h1>}
       />

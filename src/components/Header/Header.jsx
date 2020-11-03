@@ -9,32 +9,27 @@ import BasketInfo from '@components/BasketInfo';
 
 import {
   Wrapper,
-  LogoWrapper,
   ImgStyled,
-  SearchWrapper,
   BasketWrapper
 } from './Header.styles.js';
 
 const Header = () => (
   <header>
-  <Container>
-    <Wrapper>
-      <LogoWrapper>
-        <Link to='/'>
-          <ImgStyled src={logo} alt="" />
-        </Link>
-      </LogoWrapper>
-      <SearchWrapper>
-        Tutaj będzie wyszukiwarka
-      </SearchWrapper>
-      <BasketWrapper>
-        <BasketInfo
-          basketAmount={2}
-          basketTotalPrice={300}
-        />
-      </BasketWrapper>
-    </Wrapper>
-  </Container>
+    <Container>
+      <Wrapper>
+        <div>
+          <Link to="/">
+            <ImgStyled src={logo} alt="" />
+          </Link>
+        </div>
+        <BasketWrapper>
+          <BasketInfo
+            basketAmount={2}
+            basketTotalPrice={300}
+          />
+        </BasketWrapper>
+      </Wrapper>
+    </Container>
   </header>
 );
 

@@ -4,21 +4,23 @@ export const MENU_ID = {
   INSPIRATIONS: 2,
   ABOUT: 3,
   BASKET: 4
-}
+};
+
 export const MENU_PATHS = {
   HOME_PAGE: '/',
   PRODUCTS: '/products',
   INSPIRATIONS: '/inspirations',
   ABOUT: '/about',
   BASKET: '/basket'
-}
+};
+
 export const MENU_NAMES = {
   HOME_PAGE: 'Home Page',
   PRODUCTS: 'All our products',
   INSPIRATIONS: 'Inspiration',
   ABOUT: 'About OS',
   BASKET: 'Basket'
-}
+};
 
 export const menu = [
   {

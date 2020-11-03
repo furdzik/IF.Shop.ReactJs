@@ -7,8 +7,7 @@ const Button = (props) => (
   <ButtonWrapper
     type={props.type}
     onClick={props.onClick}
-    buttonPrimary={!props.secondary}
-    buttonSecondary={props.secondary}
+    secondary={props.secondary ? 1 : 0}
   >
     <ButtonText>
       {props.children}

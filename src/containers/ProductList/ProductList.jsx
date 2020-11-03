@@ -1,20 +1,32 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-// import {  } from './ProductList.reducer';
+import ProductListComponent from '@components/ProductList';
+import Loader from '@components/ui/Loader';
+
+import { getList } from './ProductList.reducer';
 import selector from './ProductList.selector';
 
-const ProductList = (props) => (
-  <React.Fragment>
+const ProductList = (props) => {
+  useEffect(() => {
+    props.getProductList();
+  }, []);
 
-  </React.Fragment>
-);
+  return !props.loading ? (
+    <ProductListComponent list={props.list} />
+  ) : <Loader covered />;
+}
 
 ProductList.propTypes = {
+  getProductList: PropTypes.func.isRequired,
+  list: PropTypes.arrayOf(PropTypes.object),
+  loading: PropTypes.bool.isRequired
 };
 
 const mapDispatchToProps = {
+  getProductList: getList,
+  list: []
 };
 
 export default connect(selector, mapDispatchToProps)(ProductList);
