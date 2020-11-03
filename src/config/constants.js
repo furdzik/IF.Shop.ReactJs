@@ -2,19 +2,22 @@
 export const MENU_ID = {
   PRODUCTS: 1,
   INSPIRATIONS: 2,
-  ABOUT: 3
+  ABOUT: 3,
+  BASKET: 4
 }
 export const MENU_PATHS = {
   HOME_PAGE: '/',
   PRODUCTS: '/products',
   INSPIRATIONS: '/inspirations',
-  ABOUT: '/about'
+  ABOUT: '/about',
+  BASKET: '/basket'
 }
 export const MENU_NAMES = {
   HOME_PAGE: 'Home Page',
   PRODUCTS: 'All our products',
   INSPIRATIONS: 'Inspiration',
-  ABOUT: 'About OS'
+  ABOUT: 'About OS',
+  BASKET: 'Basket'
 }
 
 export const menu = [

@@ -7,10 +7,8 @@ const Button = (props) => (
   <ButtonWrapper
     type={props.type}
     onClick={props.onClick}
-    disabled={props.disabled}
     buttonPrimary={!props.secondary}
     buttonSecondary={props.secondary}
-    buttonLarge={props.large}
   >
     <ButtonText>
       {props.children}

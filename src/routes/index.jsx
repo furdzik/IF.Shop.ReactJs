@@ -9,6 +9,8 @@ import { MENU_ID, MENU_PATHS, MENU_NAMES } from '@config/constants';
 
 import Layout from '@containers/Layout';
 import PageTitle from '@components/PageTitle';
+import ProductList from '@containers/ProductList';
+import ProductDetails from '@containers/ProductDetails';
 
 const Routes = () => (
   <Router>
@@ -27,6 +29,7 @@ const Routes = () => (
       >
         <Layout menuActiveItem={MENU_ID.PRODUCTS}>
           <PageTitle>{MENU_NAMES.PRODUCTS}</PageTitle>
+          <ProductList />
         </Layout>
       </Route>
       <Route
@@ -34,7 +37,7 @@ const Routes = () => (
         exact
       >
         <Layout menuActiveItem={MENU_ID.PRODUCTS}>
-          Tu będzie lista
+          <ProductDetails />
         </Layout>
       </Route>
       <Route
@@ -51,6 +54,14 @@ const Routes = () => (
       >
         <Layout menuActiveItem={MENU_ID.ABOUT}>
           <PageTitle>{MENU_NAMES.ABOUT}</PageTitle>
+        </Layout>
+      </Route>
+      <Route
+        path={MENU_PATHS.BASKET}
+        exact
+      >
+        <Layout menuActiveItem={MENU_ID.BASKET}>
+          <PageTitle>{MENU_NAMES.BASKET}</PageTitle>
         </Layout>
       </Route>
       <Route

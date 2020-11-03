@@ -4,9 +4,10 @@ import { useIntl } from 'react-intl';
 
 import { mdiCart } from '@mdi/js';
 
+import { MENU_PATHS } from '@config/constants';
 import currencyFormatter from '@utils/currencyFormatter';
 
-import Button from '@components/ui/Button';
+import Anchor from '@components/ui/Anchor';
 
 import {
   Wrapper,
@@ -34,7 +35,7 @@ const BasketInfo = (props) => {
         {currencyFormatter(intl, props.basketTotalPrice)}
       </Box>
       <Box>
-        <Button onClick={() => {}}>{intl.formatMessage(messages.buttonText)}</Button>
+        <Anchor to={MENU_PATHS.BASKET}>{intl.formatMessage(messages.buttonText)}</Anchor>
       </Box>
     </Wrapper>
   );

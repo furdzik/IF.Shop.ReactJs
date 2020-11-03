@@ -1,4 +1,14 @@
 {
   "BasketInfo.buttonText": "Check out",
+  "Footer.bestsellerA4": "A4",
+  "Footer.bestsellerA5": "A5",
+  "Footer.bestsellerPens": "Pens",
+  "Footer.bestsellerStaplers": "Staplers",
+  "Footer.bestsellerTitle": "Bestseller",
+  "Footer.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.",
+  "Footer.socialFacebook": "Facebook",
+  "Footer.socialLinkedIn": "LinkedIn",
+  "Footer.socialTitle": "We're social!",
+  "Footer.socialTwitter": "Twitter",
   "src.utils.companyName": "OfficeSupplies"
 }

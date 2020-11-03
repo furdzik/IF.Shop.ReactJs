@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 import {
   Button,
   Text
 } from '@styles/buttonsHelpers.styles';
 
-const ButtonWrapper = styled.button`
+const AnchorWrapper = styled(Link)`
   ${Button}
 `;
 
-const ButtonText = styled.span`
+const AnchorText = styled.span`
   ${Text}
 `;
 
 export {
-  ButtonText,
-  ButtonWrapper
+  AnchorWrapper,
+  AnchorText
 };

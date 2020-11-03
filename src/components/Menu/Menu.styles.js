@@ -22,9 +22,10 @@ const LinkStyled = styled(Link)`
 
 const MenuItem = styled.li`
   display: block;
+  margin: 2rem 0;
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 2rem 0;
+  line-height: 1.3;
   & + & {
     margin-left: 3rem;
   }
