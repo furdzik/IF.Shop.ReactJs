@@ -6,6 +6,6 @@ export default create({
   barSelectedColor: '#1825aa',
 
   brandTitle: 'Storybook',
-  brandUrl: 'https://github.com/furdzik/if.japanese',
+  brandUrl: 'https://github.com/furdzik/if.shop.reactjs',
   brandImage: './icon.jpg'
 });

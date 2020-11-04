@@ -14,26 +14,26 @@ const Menu = (props) => (
   <Wrapper>
     <Container>
       <MenuList>
-      {
-        props.list.map((el) => (
-          <MenuItem
-            key={el.id}
-            active={props.active === el.id ? 1 : 0}
-          >
-            <LinkStyled to={`${el.link}`}>
-              {el.name}
-            </LinkStyled>
-          </MenuItem>
-        ))
-      }
+        {
+          props.list.map((el) => (
+            <MenuItem
+              key={el.id}
+              active={props.active === el.id ? 1 : 0}
+            >
+              <LinkStyled to={`${el.link}`}>
+                {el.name}
+              </LinkStyled>
+            </MenuItem>
+          ))
+        }
       </MenuList>
     </Container>
   </Wrapper>
 );
 
 Menu.propTypes = {
-  list: PropTypes.array.isRequired,
-  active: PropTypes.number.isRequired
+  active: PropTypes.number.isRequired,
+  list: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default Menu;

@@ -8,13 +8,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furdzik/if.japanese.git"
+    "url": "git+https://github.com/furdzik/if.shop.reactjs.git"
   },
   "bugs": {
-    "url": "https://github.com/furdzik/if.japanese/issues"
+    "url": "https://github.com/furdzik/if.shop.reactjs/issues"
   },
-  "homepage": "https://github.com/furdzik/if.japanese#readme",
-  "description": "Japanese APP",
+  "homepage": "https://github.com/furdzik/if.shop.reactjs#readme",
+  "description": "Shop APP",
   "scripts": {
     "build": "npx webpack --env.production --progress --colors",
     "commit": "npx git-cz",

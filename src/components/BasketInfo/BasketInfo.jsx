@@ -39,7 +39,7 @@ const BasketInfo = (props) => {
       </Box>
     </Wrapper>
   );
-}
+};
 
 BasketInfo.propTypes = {
   basketAmount: PropTypes.number.isRequired,

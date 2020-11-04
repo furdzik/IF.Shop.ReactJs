@@ -16,17 +16,20 @@ const ProductList = (props) => {
   return !props.loading ? (
     <ProductListComponent list={props.list} />
   ) : <Loader covered />;
-}
+};
 
 ProductList.propTypes = {
   getProductList: PropTypes.func.isRequired,
-  list: PropTypes.arrayOf(PropTypes.object),
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
+  list: PropTypes.arrayOf(PropTypes.object)
+};
+
+ProductList.defaultProps = {
+  list: []
 };
 
 const mapDispatchToProps = {
-  getProductList: getList,
-  list: []
+  getProductList: getList
 };
 
 export default connect(selector, mapDispatchToProps)(ProductList);

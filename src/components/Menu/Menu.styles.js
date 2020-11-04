@@ -10,7 +10,6 @@ const MenuList = styled.ul`
   display: flex;
 `;
 
-
 const LinkStyled = styled(Link)`
   color: ${(props) => props.theme.colors.primaryColor};
   text-decoration: none;
@@ -32,11 +31,10 @@ const MenuItem = styled.li`
 
   ${(props) => props.active && css`
     ${LinkStyled} {
-      color: ${(props) => props.theme.colors.tertiaryColor};
+      color: ${props.theme.colors.tertiaryColor};
     }
   `}
 `;
-
 
 export {
   Wrapper,

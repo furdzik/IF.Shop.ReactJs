@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-
-`;
-
 const DetailsWrapper = styled.div`
   display: flex;
 `;
@@ -36,7 +32,6 @@ const Color = styled.div`
 `;
 
 export {
-  Wrapper,
   DetailsWrapper,
   Description,
   AddToBasketBox,

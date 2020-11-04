@@ -10,12 +10,11 @@ import Menu from '@components/Menu';
 import Content from '@components/Content';
 import Footer from '@components/Footer';
 
-// import {  } from './Layout.reducer';
 import selector from './Layout.selector';
 
 const Layout = (props) => (
   <React.Fragment>
-    {/* przekazać parametry do BasketInfo */}
+    {/* przekazać parametry do BasketInfo ze reducera basket */}
     <Header />
     <Menu
       list={menu}
@@ -33,6 +32,10 @@ const Layout = (props) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   menuActiveItem: PropTypes.number
+};
+
+Layout.defaultProps = {
+  menuActiveItem: 0
 };
 
 const mapDispatchToProps = {

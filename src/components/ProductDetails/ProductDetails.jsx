@@ -9,7 +9,6 @@ import Gallery from '@components/Gallery';
 import Button from '@components/ui/Button';
 
 import {
-  Wrapper,
   DetailsWrapper,
   Description,
   AddToBasketBox,
@@ -22,26 +21,24 @@ const ProductDetails = (props) => {
   const intl = useIntl();
 
   return (
-    <Wrapper>
-      <DetailsWrapper>
-        <Gallery images={props.images} />
-        <div>
-          <PageTitle>{props.name}</PageTitle>
-          <AddToBasketBox>
-            <Price>{currencyFormatter(intl, props.price)}</Price>
-            <Button secondary>Buy</Button>
-            <Colors>
-              {
-                props.availableColors.map((el) => (
-                  <Color colorCode={el.code} />
-                ))
-              }
-            </Colors>
-          </AddToBasketBox>
-          <Description>{props.description}</Description>
-        </div>
-      </DetailsWrapper>
-    </Wrapper>
+    <DetailsWrapper>
+      <Gallery images={props.images} />
+      <div>
+        <PageTitle>{props.name}</PageTitle>
+        <AddToBasketBox>
+          <Price>{currencyFormatter(intl, props.price)}</Price>
+          <Button secondary>Buy</Button>
+          <Colors>
+            {
+              props.availableColors.map((el) => (
+                <Color colorCode={el.code} />
+              ))
+            }
+          </Colors>
+        </AddToBasketBox>
+        <Description>{props.description}</Description>
+      </div>
+    </DetailsWrapper>
   );
 };
 

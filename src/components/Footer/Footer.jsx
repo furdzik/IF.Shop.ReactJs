@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 
@@ -26,7 +25,6 @@ import {
 } from './Footer.styles.js';
 import messages from './Footer.messages';
 
-
 const Footer = () => {
   const intl = useIntl();
 
@@ -36,7 +34,7 @@ const Footer = () => {
         <BoxWrapper>
           <AboutUsBox>
             <LogoWrapper>
-              <Link to='/'>
+              <Link to="/">
                 <ImgStyled src={logo} alt="" />
               </Link>
             </LogoWrapper>
@@ -125,9 +123,6 @@ const Footer = () => {
       </Container>
     </FooterWrapper>
   );
-}
-
-Footer.propTypes = {
 };
 
 export default Footer;

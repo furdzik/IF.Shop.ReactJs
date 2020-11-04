@@ -129,7 +129,6 @@ Branch should have an ID of task from JIRA (ex. `feature/ZAR-123/change-password
 ### [How to write stories](https://storybook.js.org/docs/basics/writing-stories/)
 
 - Do not apply any paddings or margins that wrap component. If you need it add [wrapper](https://storybook.js.org/docs/addons/introduction/#wrapper-components) then style it
-- Keep all stories in [all.stories.jsx](https://github.com/furdzik/if.japanese/blob/master/src/components/all.stories.jsx)
 - Stories should have views such as default/expected view but also edge cases (eg. blank list, very long / very short literals)
 - Make sure you dont have any a11y violations in `Accessibility` addon
 - Storybook should contains only components (not containers)
